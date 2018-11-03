@@ -74,3 +74,38 @@ header a {
     text-decoration: none;
 
 }
+.login-body{
+
+}
+.login-box{
+    width: 60%;
+    height: 240px;
+    background: #42aff8;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+#login{
+        margin-left: 30%;
+        margin-top: 5%;
+        padding: 19px;;
+}
+#login input{
+    line-height: 1.5;
+    margin: 10px;
+}
+#login input #signin{
+    margin-left: 60px;
+}
+.create-order {
+    margin: 1%;
+    background: #f3eded;
+    padding: 50px;
+    display: flex;
+    height: max-content;
+    margin-left:30px;
+
+}
+.create-order form input{
+    padding: 10px;
+    margin: 8px;
+}
