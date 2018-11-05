@@ -30,28 +30,109 @@
             </nav>
         </section>
         <article class="create-order">
+                <article>
+                        <table>
+                                <thead>
+                                    <tr>
+                                        <th>No of orders</th>    
+                                       
+                                        <th> Parcel Weight </th>
+                                        <th> Pickup Location </th>                     
+                                        <th> Destination </th>
+                                        <th> Price </th>
+                                        <th colspan="2"> Status </th>
+                                        <th colspan="2">Action</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <th>1</th>
+                                        
+                                        <td> 40 kgs</td>
+                                        <td> Juba </td>
+                                        <td> Mityana </td>
+                                        <td> shs 8920000 </td>
+                                        <td> <input type="Radio" value="delivered" >Delivered </td>
+                                        <td><input type="radio" value="tansition"  >In-Transition </td>
+                                        <td>  <input type="submit" value="EDIT"> </td>
+                                        <td> <input type="submit" value="Cancel"></td>   
+                                    </td>
+                                        
+                                        
+                        
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        
+                                        <td> 4090 kgs</td>
+                                        <td> lweza </td>
+                                        <td> Mityana </td>
+                                       <td> shs 920000 </td> 
+                                       <td> <input type="Radio" value="delivered" >Delivered </td>
+                                        <td><input type="radio" value="tansition"  >In-Transition </td>
+                                        <td>  <input type="submit" value="EDIT"> </td>
+                                        <td> <input type="submit" value="Cancel"></td>   
+                                       
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        
+                                        <td> 6000 kgs</td>
+                                        <td> luzila </td>
+                                        <td> Mityana </td>
+                                        <td> shs 109820000 </td>
+                                        <td> <input type="Radio" value="delivered" >Delivered </td>
+                                        <td><input type="radio" value="tansition"  >In-Transition </td>
+                                        <td>  <input type="submit" value="EDIT"> </td>
+                                        <td> <input type="submit" value="Cancel"></td>         
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                         <td> 200 kgs</td>
+                                        <td> Mbale </td>
+                                        <td> Mityana </td>
+                                        <td> shs 21090000 </td> 
+                                        <td> <input type="Radio" value="delivered" >Delivered </td>
+                                        <td><input type="radio" value="tansition"  >In-Transition </td>
+                                        <td>  <input type="submit" value="EDIT"> </td>
+                                        <td> <input type="submit" value="Cancel"></td>  
+                                        
+                                    </tr>
+        
+                            </tbody>
+                
+                       </table>
                 <form>
-                        <label for="user_name" > Username </label>
-                        <input type="text" placeholder=" ">
-                                <br /> 
-                        <label for="Email" > Email  </label>
-                        <input type="text" placeholder=" "/>
-                                <br />
-                        <label for="weight" > Parcel Weight </label>
-                        <input type="text" placeholder=" "/>
-                                <br />
-                        <label for="Pickup_location" > Pickup Location  </label>
-                        <input type="text" placeholder=" "/>
-                                <br />  
-                        <label for="Destination_location" > Final Destination  </label>
-                        <input type="text" placeholder=" "/>
-                        <button class="button_3"> EDIT </button>
-                                <br />                             
-                        <label for="price" > Price </label>
-                        <input type="text" placeholder=" ">
-                        <br />
-                       <button class="button_1"> SAVE </button>
-                       <button class="button_2"> CANCEL </button>
+                        <table>
+                               
+                                <tr>
+                                    <td> <label for="weight" > Parcel Weight </label> </td>
+                                    <td>  <input type="text" placeholder="Parcel Weight"/></td>
+                                </tr>
+                                <tr>
+                                    <td> <label for="Pickup_location" > Pickup Location  </label> </td>
+                                    <td>  <input type="text" placeholder="Pickup Location"/></td>
+                                </tr>
+                                <tr>
+                                    <td> <label for="Destination_location" > Final Destination  </label> </td>
+                                    <td>  <input type="text" placeholder="Destination"/></td>
+                                    <td>  <input class="button_3" type="submit" value="EDIT"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label for="price" > Price </label> </td>
+                                    <td>   <input type="text" placeholder="Price"></td>
+                                </tr> 
+                                <tr>
+                                    <td> <input type="submit" class="button_1" value="Save"> </td>
+                                    <td> <input type="submit" class="button_2" value="Cancel"> </td>
+                                  
+                                </tr>                             
+                    
+                               
+                            </table>
+                        
                    </form>
         </article>
     </div>

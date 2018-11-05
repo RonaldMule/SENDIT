@@ -8,6 +8,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <script src="main.js"></script>
 </head>
+<style>
+    body{
+        width: 98%;
+        margin: auto;
+        overflow: hidden;
+        background-image: url("../images/newdelv.jpg")
+    }
+    
+</style>
 <body > 
     <div class="main-container">
         <header>
@@ -20,17 +29,67 @@
         </header>
         <div class="login-body">
             <div class="login-box">
-                <form id="login">
-                     Username: <input name ="username" type="text" >
-                             <br />
-                    Password: <input name = "password" type="password"> 
-                                 <br />
-                    <p>
-                        
-                        <button class="button_1" type="submit">Submit</button>
-                        <a href="/application/create_account.html" > <button>create account </button></a>
-                     </p>
-                 </form>
+                <form id="login"  method="POST">
+                    <div class="login-form">
+                        <table>
+                            <tr>
+                                <td> <label for="user_name" > Username </label> </td>
+                                <td>  <input name ="username" type="text" placeholder="username" > </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="password" >Password: </label> </td>
+                                <td>  <input type="password" placeholder="password" > </td>
+                            </tr>
+                            <tr>
+                                <td>  <input type="submit" value="Sign in" > </td>
+
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" value="Remember" checked="checked" >Remember Me </td>
+                                <td> <input type="checkbox" value="forgot" >Forgot Password </td>
+
+                            </tr>
+                        </table>    
+                    </div>
+                </form>
+               
+                <form class="create-account" method="POST" id="login">
+                     <div class="create-form">
+                        <table>
+                            <tr>
+                                <td> <label for="first-name" > First Name </label> </td>
+                                <td>  <input name ="fname" type="text" placeholder="first name" > </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="last-name" > Last Name </label> </td>
+                                <td>  <input name ="Lname" type="text" placeholder="last name"> </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="User-name" > Username </label> </td>
+                                <td>  <input name ="Uname" type="text" placeholder="username"> </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="email" > Email </label> </td>
+                                <td>  <input  type="email" size="20" placeholder="email" > </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="password" >Password: </label> </td>
+                                <td>  <input type="password" placeholder="password"> </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="password" >Confirm Password </label> </td>
+                                <td>  <input type="password" placeholder="confirm password" > </td>
+                            </tr>
+                            <tr>
+                                <td>  <input type="submit" value="Create Account" > </td>
+
+                            </tr>
+                            
+                        </table> 
+                    </div>   
+  
+                </form>
+               
             </div>
         </div>
     
