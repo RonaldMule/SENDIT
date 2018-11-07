@@ -1,10 +1,13 @@
-*SENDIT THE PARCEL DELIVERY COMPANY*
-~~
+#SENDIT THE PARCEL DELIVERY COMPANY
+```
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT provides courier quotes based on weight categories.
-~~
-**Prerequisites**
-~~
+```
+##Prerequisites
+```
  HTML, CSS, and Javascript.
- ~~
+ ```
+## vist it here
+[SENDIT]( https://ronaldmule.github.io/SENDIT/)
+
 
 
