@@ -11,7 +11,7 @@ class Parcel:
     #A propety to serialize information 
     def to_json(self):
         parcel_orders = {
-                
+                'id':len(parcel_order_list)+1,
                 'parcel_weight':self.parcel_weight,
                 'pickup_location': self.pickup_location,
                 'destination': self.destination,
