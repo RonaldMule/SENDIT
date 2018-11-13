@@ -15,10 +15,10 @@ def parcelOrders():
 
 
 
-
 def getAllParcelOrders():
-
-    return jsonify({'parcels':parcel_order_list}), 200  
+    
+    return jsonify({'parcels':parcel_order_list}), 200 
+ 
 
 def makeNewParcelOrder():
     data = request.get_json(force=True)
@@ -31,14 +31,6 @@ def makeNewParcelOrder():
         print(e)
         return jsonify({'message': 'price should be an integer'}), 400
     return jsonify({'message': 'post successful'}), 201   
-
-def getParcelOrder(id):
-    parcels = []
-    
-    for parcel in parcels:
-        parcels.append(parcel.to_json())
-    print(json_parcelOrders)
-    print(len(json_parcelOrders))  
 
 
 
