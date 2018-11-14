@@ -30,27 +30,28 @@
             </nav>
         </section>
         <article class="create-order">
-                <form>
-                        <label for="user_name" > Username </label>
-                        <input type="text" placeholder="USERNAME">
-                                <br /> 
-                        <label for="Email" > Email  </label>
-                        <input type="text" placeholder="Email"/>
-                                <br />
-                        <label for="weight" > Parcel Weight </label>
-                        <input type="text" placeholder="Parcel Weight"/>
-                                <br />
-                        <label for="Pickup_location" > Pickup Location  </label>
-                        <input type="text" placeholder="Pickup Location"/>
-                                <br />  
-                        <label for="Destination_location" > Final Destination  </label>
-                        <input type="text" placeholder="Destination"/>
-                                <br />                             
-                        <label for="price" > Price </label>
-                        <input type="text" placeholder="Price">
-                        <br />
-                       <button class="button_1"> Save </button>
-                   </form>
+                <form method="POST">
+                    <table>
+                        <tr>
+                            <td> <label for="weight" > Parcel Weight </label> </td>
+                            <td>  <input type="text" placeholder="Parcel Weight"/></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="Pickup_location" > Pickup Location  </label> </td>
+                            <td>  <input type="text" placeholder="Pickup Location"/></td>
+                        </tr>
+                        <tr>
+                            <td> <label for="Destination_location" > Final Destination  </label> </td>
+                            <td>  <input type="text" placeholder="Destination"/></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="submit" class="button_1" value="Create Order"> </td>
+                          
+                        </tr>                             
+            
+                       
+                    </table>
+                    </form>
         </article>
     </div>
     

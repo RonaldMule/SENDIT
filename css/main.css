@@ -6,6 +6,7 @@ body {
     padding:0;
     margin: 0;
     background-color: #fafafa;
+    overflow: auto;
 }
 .main-container {
     width: 98%;
@@ -42,13 +43,11 @@ header a {
     width: 20%;
     height: 490px;
     background: #42aff8;
-    margin: 2px;
+    margin: 5px;
     padding: 2px;
     float: left;
     text-decoration: none;
-
-    
-}
+}    
 .second-nav a {
     margin: 8%;
     
@@ -75,38 +74,85 @@ header a {
 
 }
 .login-body{
+    
+    width: 68%;
+    height: auto;
+    overflow: auto;
+  
+    margin-left: 8%;
+    margin-top: 1%;
 
 }
 .login-box{
-    width: 60%;
-    height: 240px;
-    background: #42aff8;
-    margin-left: 15%;
-    margin-top: 10%;
+    clear: both;
+    overflow: auto;
+    
 }
-#login{
-        margin-left: 30%;
-        margin-top: 5%;
-        padding: 19px;;
+.login-box table{
+    text-transform: uppercase;
+    color: #ffffff;
+    overflow: auto;
+    margin: 10px;
 }
+
 #login input{
     line-height: 1.5;
     margin: 10px;
 }
-#login input #signin{
-    margin-left: 60px;
+
+
+.login-form{
+    
+    clear: both;
+    background: #3aabf7;
+    overflow: auto;
+    margin-left: 15%;
+    margin-top: 5%;
+    
+
 }
+.create-form{
+    display: flex;
+    float: right;
+    background: #3aabf7;
+  
+    margin: 2px;
+   
+  
+   
+}
+
 .create-order {
-    margin: 1%;
+    margin: 6.5px;
     background: #f3eded;
-    padding: 50px;
+    padding: 10px;
     display: flex;
     height: max-content;
     margin-left:30px;
+    padding-left:55px;
 
 }
 .create-order form input{
     padding: 10px;
     margin: 8px;
     margin-left: 50px;
+}
+table{
+    width: 60%;
+    clear: both;
+}
+th, td {
+    padding: 7px 10px 10px 10px;
+    
+     
+}
+th{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    text-align: left;
+    background: #add9f7
+}
+.table-body{
+    background: #c5c5c5
 }

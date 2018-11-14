@@ -9,9 +9,9 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="main-container"> 
+    <div class="main-container">
         <header>
-            <h1>ORDERS IN-TRANSIT</h1>
+            <h1>MY ORDERS ORDER</h1>
             <nav>
                 <ul>
                     <li> <a href="login.html"> Logout</a> </li>
@@ -29,75 +29,80 @@
                 </ul>
             </nav>
         </section>
-        <article>
+      
+        <article class="create-order">
                 <table>
                         <thead>
                             <tr>
-                                <th>#</th>    
-                                <th> Username </th>
-                                <th> Email </th>
+                                <th>No of orders</th>    
+                               
                                 <th> Parcel Weight </th>
                                 <th> Pickup Location </th>                     
                                 <th> Destination </th>
                                 <th> Price </th>
-                                <th> Status </th>
+                                <th > Status </th>
+                              
+                                
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-body">
                             <tr>
                                 <th>1</th>
-                                <td> Mule  </td>
-                                <td>ronaldmulyowa@gmail.com</td>
+                                
                                 <td> 40 kgs</td>
                                 <td> Juba </td>
                                 <td> Mityana </td>
                                 <td> shs 8920000 </td>
-                                <td> <a href="#"> <button id="deliver_button"> In Transit </button> </a>  
-                                </td>
+                                <td><input type="radio" value="tansition"  >In-Transit</td>
+                                
+                            </td>
+                                
                                 
                 
                             </tr>
                             <tr>
                                 <th>2</th>
-                                <td> Mule  </td>
-                                <td>ronaldmulyowa@gmail.com</td>
+                                
                                 <td> 4090 kgs</td>
                                 <td> lweza </td>
                                 <td> Mityana </td>
                                <td> shs 920000 </td> 
-                               <td> <a href="#"> <button id="deliver_button"> In Transit </button> </a>  
-                               </td>
+                               <td> <input type="Radio" value="delivered" >Delivered </td>
+                              
+                               
                                
                             </tr>
                             <tr>
                                 <th>3</th>
-                                <td> Mule  </td>
-                                <td>ronaldmulyowa@gmail.com</td>
+                                
                                 <td> 6000 kgs</td>
                                 <td> luzila </td>
                                 <td> Mityana </td>
                                 <td> shs 109820000 </td>
-                                <td> <a href="#"> <button id="deliver_button"> In Transit </button> </a> </td>
-                                        
+                                <td> <input type="Radio" value="delivered" >Delivered </td>
+                                
+                                 
                                 
                             </tr>
                             <tr>
                                 <th>4</th>
-                                <td> Mule  </td>
-                                <td>ronaldmulyowa@gmail.com</td>
-                                <td> 200 kgs</td>
+                                 <td> 200 kgs</td>
                                 <td> Mbale </td>
                                 <td> Mityana </td>
                                 <td> shs 21090000 </td> 
-                                <td> <a href="#"> <button id="deliver_button"> In Transit </button> </a> </td>
+                                <td> <input type="Radio" value="delivered" >Delivered </td>
+                                
+                                
                                 
                             </tr>
 
                     </tbody>
         
                </table>
-        </article>
+     
+</article>
     </div>
+
     
 </body>
 </html>
