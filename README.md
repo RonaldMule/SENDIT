@@ -28,7 +28,7 @@ provides courier quotes based on weight categories.
 ~~~
 
 |     EndPoint 	                |                Functionality             | 
-|_______________________________|__________________________________________|
+|-------------------------------|------------------------------------------|
 |GET /parcels                   |Fetch all parcel delivery orders          |
 |GET /parcels/<parcelId>        |Fetch a specific parcel delivery order    |
 |GET /users/<userId>/parcels    |Fetch all parcel delivery orders by a specific user|
