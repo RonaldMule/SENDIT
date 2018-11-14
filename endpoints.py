@@ -5,6 +5,9 @@ app = Flask(__name__)
 
 @app.route("/api/v1/parcels", methods =['POST'])
 def makeNewParcelOrder():
+    '''
+    creating a parcel order
+    '''
     data = request.get_json(force=True)
     try:
         
@@ -20,9 +23,12 @@ def makeNewParcelOrder():
 def getAllParcelOrders(): 
     return jsonify({'parcels':parcel_order_list}), 200 
 
-#another app.route() decorator here takes in an integer id
+
 @app.route("/api/v1/parcels/<int:id>", methods = ['GET']) 
 def singleParcelOrder(id):
+    '''
+    another app.route() decorator here takes in an integer id
+    '''
     
     for parcel in parcel_order_list:
         if parcel['id'] == id: 
@@ -31,12 +37,21 @@ def singleParcelOrder(id):
         
     return jsonify({'message': 'parce_id does not exist'})    
 
-
+@app.route("/api/v1/parcels/<int:id>", methods = ['PUT']) 
 def updateParcelOrder(id):
-    pass
-def  deleteParcelOrder(id):
-    pass   
+    '''
+    updating status route
+    '''
+    data = request.get_json(force=True)
+    for parcel in parcel_order_list:
+        if parcel['id'] == id:
+            parcel['status']= data['status']
+               
+            return jsonify(parcel), 201
+    return jsonify({'message': 'status update failed'})
+
+
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5010)        
+    app.run(debug=True, port=5090)        
 
