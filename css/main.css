@@ -6,6 +6,7 @@ body {
     padding:0;
     margin: 0;
     background-color: #fafafa;
+    overflow: auto;
 }
 .main-container {
     width: 98%;
@@ -74,22 +75,24 @@ header a {
 }
 .login-body{
     
-    width: 78%;
+    width: 68%;
     height: auto;
+    overflow: auto;
   
-    margin-left: 5%;
-    margin-top: 2.3%;
+    margin-left: 8%;
+    margin-top: 1%;
 
 }
 .login-box{
     clear: both;
-    overflow: hidden;
+    overflow: auto;
     
 }
 .login-box table{
     text-transform: uppercase;
-    color: #ffffff
-
+    color: #ffffff;
+    overflow: auto;
+    margin: 10px;
 }
 
 #login input{
@@ -99,10 +102,12 @@ header a {
 
 
 .login-form{
-    float: left;
+    
     clear: both;
     background: #3aabf7;
- 
+    overflow: auto;
+    margin-left: 15%;
+    margin-top: 5%;
     
 
 }

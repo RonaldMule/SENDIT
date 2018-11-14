@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+    body{
+        background: blue;
+    }
+    .edit-container{
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 60%;
+        height: 50%;
+        overflow: auto;
+        background-color: #fdfdfd;
+
+
+    }
+    .modal-content{
+        background-color: beige;
+        margin: 4% auto;
+        padding: 6px;
+        border: 3px solid burlywood;
+        width: 56%;
+    }
+    .close{
+        color: #aaa;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus{
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <button id="myBtn"> open Me</button> 
+    <div id ="myModel" class="model">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                    <table>
+                            <tr>
+                                <td><INPUT TYPE="radio" NAME="status" checked="checked" VALUE="Delivered"> Delivered</td>                                                   
+                                <td><INPUT TYPE="radio" NAME="status" VALUE="In-Transit"> In-Transit</td>                               
+                           
+                            </tr>
+                            
+                              
+                    
+                    </table>   
+            </form> 
+        </div> 
+    </div> 
+    <script>
+        var model = document.getElementById('myModel');
+        var btn =document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function(){
+            model.style.display = "block";
+        }
+        span.onclick = function(){
+            model.style.display = "none"
+
+        }
+        window.onclick = function(event){
+            if (event.target==model){
+                model.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SENDIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+        .edit-container{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            width: 60%;
+            height: 50%;
+            overflow: auto;
+            background-color: #fdfdfd;
+            opacity: 0.8;
+    
+    
+        }
+        .modal-content{
+            background-color: beige;
+            margin: 4% auto;
+            padding: 6px;
+            border: 3px solid burlywood;
+            width: 56%;
+        }
+        .close{
+            color: #aaa;
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus{
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>ADMIN DASHBOAD</h1>
+            <nav>
+                <ul>
+                    <li> <a href="login.html"> Logout</a> </li>
+                </ul>
+            </nav>
+        </header>
+            <section class="second-nav">
+                <nav>
+                    <ul>
+                        <li> <a href="">Manage Parcels </a> </li>                        
+                    </ul>
+                </nav>
+            </section>
+               
+            <article class="create-order">
+                <table>
+                        <thead>
+                            <tr>
+                                <th>No of orders</th>    
+                               
+                                <th> Parcel Weight </th>
+                                <th> Pickup Location </th>                     
+                                <th> Destination </th>
+                                <th> Price </th>
+                                <th > Status </th>
+                                <th>Modify Location</th>
+                                <th>Modify Status</th>
+                              
+                                
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr>
+                                <th>1</th>
+                                
+                                <td> 40 kgs</td>
+                                <td> Juba </td>
+                                <td> Mityana </td>
+                                <td> shs 8920000 </td>
+                                <td><input type="radio" value="tansition"  >In-Transit </td>
+                                <td><button id="myBtn">Edit Location </button>  </td>
+                                <td><button id="edit-status">Modify Status </button>  </td>
+                            </td>
+                                
+                                
+                
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                
+                                <td> 4090 kgs</td>
+                                <td> lweza </td>
+                                <td> Mityana </td>
+                               <td> shs 920000 </td> 
+                               
+                                <td><input type="radio" value="tansition"  >In-Transit </td>
+                                <td><button id="myBtn">Edit Location </button>  </td>
+                                <td><button id="edit-status">Modify Status </button>  </td>
+                               
+                               
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                
+                                <td> 6000 kgs</td>
+                                <td> luzila </td>
+                                <td> Mityana </td>
+                                <td> shs 109820000 </td>
+                                <td> <input type="Radio" value="delivered" checked="checked">Delivered </td>
+                                <td><button id="myBtn">Edit Location </button>  </td>
+                                <td><button id="edit-status">Modify Status </button>  </td>
+                                 
+                                
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                 <td> 200 kgs</td>
+                                <td> Mbale </td>
+                                <td> Mityana </td>
+                                <td> shs 21090000 </td> 
+                                <td> <input type="Radio" value="delivered" checked="checked" >Delivered </td>
+                                <td><button id="myBtn">Edit Location </button>  </td>
+                                <td><button id="edit-status">Modify Status </button>  </td>
+                                
+                                
+                            </tr>
+
+                    </tbody>
+        
+               </table>
+               <div id ="myModel" class="model">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+                                <table>
+                                        <tr>
+                                            <td> <label for="Pickup_location" > Pickup Location  </label> </td>
+                                            <td>  <input type="text" placeholder="Pickup Location" size="18"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <label for="New_location" > New Location  </label> </td>
+                                            <td>  <input type="text" placeholder="New Location" size="18"/></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <input type="submit" class="button_1" value="Save Changes"> </td>
+                                            
+                                        </tr>                       
+                                
+                                </table>   
+                        </form> 
+                    </div> 
+                </div> 
+                <script>
+                    var model = document.getElementById('myModel');
+                    var btn =document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    btn.onclick = function(){
+                        model.style.display = "block";
+                    }
+                    span.onclick = function(){
+                        model.style.display = "none"
+            
+                    }
+                    window.onclick = function(event){
+                        if (event.target==model){
+                            model.style.display = "none";
+                        }
+                    }
+                </script>
+             
+</article>
+</div>
+
+        
+
+    
+</body>
+</html>
