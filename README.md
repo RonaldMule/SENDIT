@@ -1,19 +1,37 @@
-*SENDIT API endpoints
+#"*SENDIT*" 
+~~~
+SENDIT API endpoints
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
 provides courier quotes based on weight categories.
+~~~
+#API endpoints
 
-*End points
 
-```
+~~~
+##Required Features
 
-|           EndPoint            |                  Functionality   |                        
 
-|     GET /parcels              |           Fetch all parcel delivery orders   |            
-|GET /parcels/<parcelId>        |   Fetch a specific parcel delivery order    |             
-|GET /users/<userId>/parcels    |Fetch all parcel delivery orders by a specific user|     
+    1. Create a parcel delivery order
+    2. Get all parcel delivery orders
+    3. Get a specific parcel delivery order
+    4. Cancel a parcel delivery order
+~~~
 
-|PUT /parcels/<parcelId>/cancel |  Cancel the specific parcel delivery order|
+##Tools
 
-|POST /parcels                  |  Create a parcel delivery order          |                
+~~~
 
-```
+    • Server-Side Framework: <Flask Python Framework>
+    • Linting Library: <Pylint, a Python Linting Library>
+        • Style Guide: <PEP8 Style Guide>
+    • Testing Framework: <PyTest, a Python Testing Framework>
+~~~
+
+|     EndPoint 	                |                Functionality         | 
+|_______________________________|______________________________________|
+|GET /parcels                   |Fetch all parcel delivery orders      |
+|GET /parcels/<parcelId>        |Fetch a specific parcel delivery order|
+|GET /users/<userId>/parcels    |Fetch all parcel delivery orders by a specific user|
+|PUT /parcels/<parcelId>/cancel |Cancel the specific parcel delivery order|
+|POST /parcels                  |Create a parcel delivery order         |
+
