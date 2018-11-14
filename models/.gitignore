@@ -1,6 +1,6 @@
 venv
 .vscode
 env
-__pycach__
+__pycache__
 __pyc__
 __init__.pyc
