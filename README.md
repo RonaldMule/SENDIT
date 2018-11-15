@@ -39,3 +39,7 @@ provides courier quotes based on weight categories.
 |PUT /parcels/<parcelId>/cancel |Cancel the specific parcel delivery order|
 |POST /parcels                  |Create a parcel delivery order         |
 
+~~~
+## The end points can be got from 
+[EndPoints - on -Heroku](https://sendit-andel.herokuapp.com/)
+~~~
