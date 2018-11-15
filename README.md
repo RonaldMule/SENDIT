@@ -6,6 +6,8 @@ provides courier quotes based on weight categories.
 ~~~
 #API endpoints
 
+[![Build Status](https://travis-ci.org/RonaldMule/SENDIT.svg?branch=Developee)](https://travis-ci.org/RonaldMule/SENDIT)
+
 
 ~~~
 ##Required Features
