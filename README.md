@@ -3,10 +3,12 @@
 SENDIT API endpoints
 SendIT is a courier service that helps users deliver parcels to different destinations. SendIT
 provides courier quotes based on weight categories.
+
+[![Build Status](https://travis-ci.org/RonaldMule/SENDIT.svg?branch=Developee)](https://travis-ci.org/RonaldMule/SENDIT)
+
 ~~~
 #API endpoints
 
-[![Build Status](https://travis-ci.org/RonaldMule/SENDIT.svg?branch=Developee)](https://travis-ci.org/RonaldMule/SENDIT)
 
 
 ~~~
@@ -30,7 +32,7 @@ provides courier quotes based on weight categories.
 ~~~
 
 |     EndPoint 	                |                Functionality             | 
-|_______________________________|__________________________________________|
+|-------------------------------|------------------------------------------|
 |GET /parcels                   |Fetch all parcel delivery orders          |
 |GET /parcels/<parcelId>        |Fetch a specific parcel delivery order    |
 |GET /users/<userId>/parcels    |Fetch all parcel delivery orders by a specific user|
