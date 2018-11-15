@@ -21,7 +21,7 @@ def makeNewParcelOrder():
 
 @app.route("/api/v1/parcels", methods =['GET'])
 def getAllParcelOrders(): 
-    return jsonify({'parcels':parcel_order_list}), 200 
+    return jsonify({'parcels':parcel_order_list}), 201
 
 
 @app.route("/api/v1/parcels/<int:id>", methods = ['GET']) 
@@ -47,10 +47,8 @@ def updateParcelOrder(id):
         if parcel['id'] == id:
             parcel['status']= data['status']
                
-            return jsonify(pa), 201
+            return jsonify(parcel), 201
     return jsonify({'message': 'status update failed'})
-
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=5090)        

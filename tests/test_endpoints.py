@@ -2,14 +2,26 @@
 test module
 '''
 from endpoints import app
-from unittest import TestCase
+import pytest
 
-class TestEndPoints(TestCase):
+@pytest.fixture()
+def client():
+    test_client = app.test_client()
+    return test_client
+class TestEndPoints:
     """
     Test the endpoints
     """
-    def setUp(self):
-        self.app_tester = app.test_client()
+    def test_getAllParcelOrders(self, client):
+        response = client.get("/api/v1/parcels")
+        assert response.status_code == 201
         
-    def test_makeNewParcelOrder(self):
-        self.assertEqual(response.status_code,(201))
+    def test_makeNewParcelOrder(self, client):    
+        response = client.get("/api/v1/parcels")
+        assert response.status_code == 201 
+    def test_singleParcelOrder(id):
+        response = client.get("/api/v1/parcels/<int:id>")
+        assert response.status_code == 201   
+    def test_updateParcelOrder(id):
+        response = client.get("/api/v1/parcels/<int:id>")
+        assert response.status_code == 201         
